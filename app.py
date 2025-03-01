@@ -10,6 +10,7 @@ if uploaded_file is not None:
     bytes_data = uploaded_file.getvalue()
     data = bytes_data.decode("utf-8")
     df = preprocessor.preprocess(data)
+    print(df)
 
     # fetch unique users
     user_list = df['user'].unique().tolist()
