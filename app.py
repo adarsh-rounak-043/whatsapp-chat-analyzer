@@ -11,7 +11,6 @@ if uploaded_file is not None:
     try:
         bytes_data = uploaded_file.getvalue()
         data = bytes_data.decode("utf-8")
-        print(data)
         df = preprocessor.preprocess(data)
 
         # fetch unique users
